@@ -1,0 +1,53 @@
+﻿# VPN Client VPN Connection Setting File
+# 
+# This file is exported using the VPN Client Manager.
+# The contents of this file can be edited using a text editor.
+# 
+# When this file is imported to the Client Connection Manager
+#  it can be used immediately.
+
+declare root
+{
+	bool CheckServerCert false
+	uint64 CreateDateTime 0
+	uint64 LastConnectDateTime 0
+	bool StartupAccount false
+	uint64 UpdateDateTime 0
+
+	declare ClientAuth
+	{
+		uint AuthType 1
+		byte HashedPassword M32ZnXiiGchCW6d+Gcn59EAU4XU=
+		string Username Admin
+	}
+	declare ClientOption
+	{
+		string AccountName AWS$20Educate2
+		uint AdditionalConnectionInterval 1
+		uint ConnectionDisconnectSpan 0
+		string DeviceName VPN
+		bool DisableQoS false
+		bool HalfConnection false
+		bool HideNicInfoWindow false
+		bool HideStatusWindow false
+		string Hostname ec2-100-26-49-115.compute-1.amazonaws.com
+		string HubName VPN
+		uint MaxConnection 1
+		bool NoRoutingTracking false
+		bool NoTls1 false
+		bool NoUdpAcceleration false
+		uint NumRetry 4294967295
+		uint Port 992
+		uint PortUDP 0
+		string ProxyName 127.0.0.1
+		byte ProxyPassword $
+		uint ProxyPort 1080
+		uint ProxyType 0
+		string ProxyUsername $
+		bool RequireBridgeRoutingMode false
+		bool RequireMonitorMode false
+		uint RetryInterval 15
+		bool UseCompress false
+		bool UseEncrypt true
+	}
+}
